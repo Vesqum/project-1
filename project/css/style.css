@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -49,16 +53,23 @@ body {
     text-transform: uppercase;
     text-align: center;
 }
+
+section {
+    scroll-margin-top: 80px;
+}
     
 
 
 /* Navigation */
 
 nav {
+    position: sticky;
+    top: 0;
     height: 60px;
     line-height: 60px;
     background-color: #ddd;
     text-align: center;
+    z-index: 10;
 }
 
 .burger-icon {
@@ -74,6 +85,7 @@ nav {
 
 .nav-items {
     display: none;
+    font-size: 14px;
 }
 
 /* header */
@@ -120,12 +132,13 @@ main {
 .product h3 {
     text-transform: uppercase;
     margin: 20px 0;
-    transition: color .3s;
+    transition: color .3s, transform .3s;
     cursor: pointer;
 }
 
-.product h3:hover {
+.product:hover h3 {
     color: #0099ff;
+    transform: scale(1.2);
 }
 
 
