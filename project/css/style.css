@@ -28,6 +28,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
+    
 
 }
 
@@ -36,9 +37,17 @@ body {
     text-shadow: 3px 3px 5px #000;
     color: #ddd;
 }
+
+
 .hero-text span {
     text-transform: uppercase;
     color: #0099ff;
+}
+
+.section-title {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
 }
     
 
@@ -77,6 +86,88 @@ nav {
     background-position: center;
 }
 
+/* main */
+
+main {
+    margin: 60px 0;
+}
+
+/* o nas */
+
+.about-us-info {
+    margin-bottom: 10px;
+    
+}
+
+/* product */
+
+.products {
+    margin: 60px auto;
+}
+
+.product {
+    position: relative;
+    height: 300px;
+    margin: 20px auto;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.product h3 {
+    text-transform: uppercase;
+    margin: 20px 0;
+    transition: color .3s;
+    cursor: pointer;
+}
+
+.product h3:hover {
+    color: #0099ff;
+}
+
+
+
+.first-product {
+    background-image: url('../img/children-main-small.jpg');
+}
+
+.second-product {
+    background-image: url('../img/workspace-main-small.jpg');
+}
+
+.third-product {
+    background-image: url('../img/laptop-main-small.jpg');
+}
+
+.fourth-product {
+    background-image: url('../img/laptop2-main-small.jpg');
+}
+
+/* contact */
+.contact {
+    text-align: center;
+}
+
+.contact h3{
+    margin: 20px 0 5px;
+    text-transform: uppercase;
+}
+
+
+/* footer */
+
+footer {
+    padding: 30px 10px;
+    text-align: center;
+    background-color: #ddd;
+}
+
+
+
+
 
 @media (min-width: 768px) {
     .burger-icon {
@@ -112,11 +203,44 @@ nav {
     .hero-text p {
         font-size: 18px;
     }
+    .product h3 {
+        font-size: 26px;
+    }
+
+    .first-product {
+        background-image: url('../img/children-main-big.jpg');
+    }
+    
+    .second-product {
+        background-image: url('../img/workspace-main-big.jpg');
+    }
+    
+    .third-product {
+        background-image: url('../img/laptop-main-big.jpg');
+    }
+    
+    .fourth-product {
+        background-image: url('../img/laptop2-main-big.jpg');
+    }
+
 }
+
+@media (min-width: 992px) {
+    .product-box {
+        font-size: 0;
+    }
+    .product {
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+
 @media (min-width: 1200px) {
     .hero-text h1 {
         font-size: 36px;
     }
+    
     .hero-text p {
         font-size: 18px;
     }
